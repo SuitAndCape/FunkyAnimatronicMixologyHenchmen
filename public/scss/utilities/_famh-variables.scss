@@ -1,0 +1,24 @@
+// _famh-variables.scss
+
+////= Global FunkyAnimatronicMoccasinHenchmen Variable Assignments
+//======================================================================//
+
+//== Foundation Variables ===============================================/
+
+/// HTML font-size
+/// Used with @pxrem function
+$core__html--font-size: 16px !default;
+
+/// Body font-size
+/// Used with @pxem function
+$core__body--font-size: 20px !default;
+
+//== Animatronics Variables =============================================/
+
+/// Accordian-underline
+$acc-und__height: 2px;
+$acc-und__left: 0;
+$acc-und__right: 0;
+$acc-und__top: 100%;
+$acc-und__scalex--start: 0;
+$acc-und__scalex--end: 1;

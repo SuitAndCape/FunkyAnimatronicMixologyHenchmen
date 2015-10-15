@@ -1,0 +1,24 @@
+// _animatronics.scss
+
+////= Animatronics (Animations and Transitions)
+//======================================================================//
+
+.accordion-underline,
+%accordion-underline {
+  &::before {
+    @include scaleX($acc-und__scalex--start);
+    background: currentcolor;
+    content: '';
+    height: pxem($acc-und__height);
+    left: $acc-und__left;
+    position: absolute;
+    right: $acc-und__right;
+    top: $acc-und__top;
+    transition: inherit;
+  }
+
+  &:active::before,
+  &:hover::before {
+    @include scaleX($acc-und__scalex--end);
+  }
+}

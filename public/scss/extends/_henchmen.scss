@@ -1,0 +1,122 @@
+// _henchmen.scss
+
+////= Henchmen (Helpers)
+//======================================================================//
+
+/// Place a border around an element
+.border,
+%border {
+  border: pxem(1px) solid $ebony;
+}
+
+/// Center alignment
+.center-align,
+%center-align {
+  text-align: center;
+}
+
+/// Center elements
+.centered,
+%centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/// Clearfix lets an element clear its child elements, in float layouts
+//where elements are floated horizontal stacking
+/// Often used to combat the zero-height container problem
+/// @link https://css-tricks.com/snippets/css/clear-fix/
+.clearfix,
+%clearfix {
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+/// Fixed position
+.fasten,
+%fasten {
+  position: fixed;
+}
+
+/// Image flipped horizontally
+.horizon-flip,
+%horizon-flip {
+  @include prefixinator(transform, scaleX(-1));
+  -ms-filter: 'FlipH';
+  filter: FlipH;
+}
+
+/// Hide element visually and from screenreaders, without removing it
+/// @source HTML5Boilerplate
+/// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L151-L157
+.invisible,
+%invisible {
+  visibility: hidden;
+}
+
+/// Remove element shadow styling
+.no-bs,
+%no-bs {
+  box-shadow: none;
+}
+
+/// Remove default list styling
+.no-bullets,
+%no-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/// Momentum scrolling on iOS overflow elements
+/// @link https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/
+.smooth-scroll,
+%smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; // has to be scroll, not auto
+}
+
+/// Truncates text that is too long
+/// Requires a fixed width
+/// @link http://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
+.truncate,
+%truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/// Hide only visually, but have it available for screen readers
+/// @source HTML5Boilerplate
+/// @modifier Ali Esmaili
+/// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+.visually-hidden,
+%visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: pxem(1px);
+  margin: pxem(-1px);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: pxem(1px);
+
+  /// Extends visually-hidden to allow the element to be focusable when
+  //navigated to via the keyboard
+  /// @source HTML5Boilerplate
+  /// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L135-L149
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}

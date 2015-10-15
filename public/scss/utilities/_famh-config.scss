@@ -1,0 +1,76 @@
+// _famh-config.scss
+
+////= Global FunkyAnimatronicMoccasinHenchmen Configuration
+//======================================================================//
+
+//== Descriptive Colors =================================================/
+
+/// Standard colors
+$clear: transparent !default;
+
+/// Variant and custom colors
+$ebony: #0C0B1D !default;
+
+//== Configuration Maps =================================================/
+
+/// Transition Cubic Bézier function map
+/// Used with @ease function
+$eases: (
+  /// Standard
+  'ease': cubic-bezier(.250, .100, .250, 1),
+  'in': cubic-bezier(.420, 0, 1, 1),
+  'out': cubic-bezier(0, 0, .580, 1),
+  'in-out': cubic-bezier(.420, 0, .580, 1),
+  'linear': cubic-bezier(0, 0, 1, 1),
+  /// Cubic
+  'in-cubic': cubic-bezier(.550, .055, .675, .190),
+  'out-cubic': cubic-bezier(.215, .610, .355, 1),
+  'in-out-cubic': cubic-bezier(.645, .045, .355, 1),
+  /// Quad
+  'in-quad': cubic-bezier(.550, .085, .680, .530),
+  'out-quad': cubic-bezier(.250, .460, .450, .940),
+  'in-out-quad': cubic-bezier(.455, .030, .515, .955),
+  /// Quart
+  'in-quart': cubic-bezier(.895, .030, .685, .220),
+  'out-quart': cubic-bezier(.165, .840, .440, 1),
+  'in-out-quart': cubic-bezier(.770, 0, .175, 1),
+  /// Quint
+  'in-quint': cubic-bezier(.755, .050, .855, .060),
+  'out-quint': cubic-bezier(.230, 1, .320, 1),
+  'in-out-quint': cubic-bezier(.860, 0, .070, 1),
+  /// Sine
+  'in-sine': cubic-bezier(.470, 0, .745, .715),
+  'out-sine': cubic-bezier(.390, .575, .565, 1),
+  'in-out-sine': cubic-bezier(.445, .050, .550, .950),
+  /// Expo
+  'in-expo': cubic-bezier(.950, .050, .795, .035),
+  'out-expo': cubic-bezier(.190, 1, .220, 1),
+  'in-out-expo': cubic-bezier(1, 0, 0, 1),
+  /// Circ
+  'in-circ': cubic-bezier(.600, .040, .980, .335),
+  'out-circ': cubic-bezier(.075, .820, .165, 1),
+  'in-out-circ': cubic-bezier(.785, .135, .150, .860),
+  /// Back
+  'in-back': cubic-bezier(.600, -.280, .735, .045),
+  'out-back': cubic-bezier(.175, .885, .320, 1.275),
+  'in-out-back': cubic-bezier(.680, -.550, .265, 1.550)
+) !default;
+
+/// Z-indexing map
+/// Used with @z function
+$zindices: (
+  'beyond': 9999,
+  'over': 9001,
+  'roof': 9000,
+  'major': 8000,
+  'high': 7000,
+  'mid-high': 6000,
+  'mid': 5000,
+  'mid-low': 4000,
+  'low': 3000,
+  'very-low': 2000,
+  'minor': 1000,
+  'floor': 1,
+  'below': -1,
+  'abyss': -9000
+) !default;

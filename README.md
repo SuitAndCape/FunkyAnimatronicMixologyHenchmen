@@ -47,15 +47,12 @@ git clone https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen.git
 ``` scss
 // `_famh-config.scss` and `_config.scss` overlaps
 $clear
-$percent--over
-$percent--major
-$percent--high
-$percent--mid-high
-$percent--mid
-$percent--minor
-$percent--below
-$speed--qck
-$speed--xqck
+```
+
+``` scss
+// `_famh-variables.scss` and `_variables.scss` overlaps
+$core__html--font-size
+$core__body--font-size
 ```
 
 ``` scss
