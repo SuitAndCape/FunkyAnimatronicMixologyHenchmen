@@ -42,7 +42,7 @@ git clone https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen.git
 
 ## ToDos
 
-- Make note of FunkyAnimatronicMoccasinHenchmen overlap
+- Make note of FunkyAnimatronicMoccasinHenchmen and RAPTORSMACSS overlap
 
 ``` scss
 // `_famh-config.scss` and `_config.scss` overlaps
@@ -82,9 +82,7 @@ To see the process that has been documented for this project, [click here](https
 
 ## Team Members:
 
-- **Ali Esmaili** _(Meticulous Developer)_: [AESM](https://github.com/AESM)
-- **Molly Allison-Baker** _(Brainstormer and Peer-Reviewer)_: [hermitina](https://github.com/hermitina)
-- **Eric Lawrence Dapp** _(Name and Logo Generator)_: [e-dapp](https://github.com/e-dapp)
+- **Ali Esmaili** _(Developer)_: [AESM](https://github.com/AESM)
 
 ## Humans.txt
 
