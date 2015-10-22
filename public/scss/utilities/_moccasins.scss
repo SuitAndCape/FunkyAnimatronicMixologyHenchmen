@@ -71,6 +71,13 @@
   }
 }
 
+/// Box-sizing generator
+/// @param {Value} $value - Box-sizing's value
+/// @requires @prefixinator
+@mixin box-sizinator($value) {
+  @include prefixinator('box-sizing', $value);
+}
+
 /// Transformation generator
 /// @param {Value} $values - Transform's function(s)/value(s)
 /// @requires @prefixinator

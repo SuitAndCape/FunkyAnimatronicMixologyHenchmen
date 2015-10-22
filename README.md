@@ -3,7 +3,9 @@
 FunkyAnimatronicMoccasinHenchmen
 ==========================================================================
 
-## Version 1.0.0
+FunkyAnimatronicMoccasinHenchmen, or FAMH for boring, is a Sass (SCSS) library, providing functions, animations/transitions, mixins, and helpers.
+
+## Version 1.0.2
 
 ## Contents
 
@@ -47,6 +49,10 @@ git clone https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen.git
 ``` scss
 // `_famh-config.scss` and `_config.scss` overlaps
 $clear
+$gallery
+$ebony
+$rgba-gallery
+$rgba-ebony
 ```
 
 ``` scss
@@ -70,6 +76,7 @@ $core__body--font-size
 
 - Add instructional `README.md` files to each directory found in `public/scss/`
 - Add more comments explaining what things do
+- Develop more animations and functions
 - Write thorough documentation explaining how to use everything
 - Include logo, when developed
 - Include favicon, when developed

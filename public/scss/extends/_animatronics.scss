@@ -10,10 +10,10 @@
     background: currentcolor;
     content: '';
     height: pxem($acc-und__height);
-    left: $acc-und__left;
+    left: 0;
     position: absolute;
-    right: $acc-und__right;
-    top: $acc-und__top;
+    right: 0;
+    top: 100%;
     transition: inherit;
   }
 

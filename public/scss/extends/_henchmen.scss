@@ -65,6 +65,12 @@
   box-shadow: none;
 }
 
+/// Removes the display of elements
+.no-display,
+%no-display {
+  display: none;
+}
+
 /// Remove default list styling
 .no-bullets,
 %no-bullets {
@@ -83,12 +89,36 @@
 
 /// Truncates text that is too long
 /// Requires a fixed width
-/// @link http://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
 .truncate,
 %truncate {
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+
+  > *:first-child {
+    float: right;
+    margin-left: -10px;
+    width: 100%;
+  }
+
+  &:before {
+    content: '';
+    float: left;
+    height: 100%;
+    width: pxem(10px);
+  }
+
+  &:after {
+    background: -webkit-linear-gradient(left, $truncated-bg-rgba, $truncated-bg-color 50%, $truncated-bg-color);
+    background: linear-gradient(to right, $truncated-bg-rgba, $truncated-bg-color 50%, $truncated-bg-color);
+    content: '\02026';
+    float: right;
+    left: 100%;
+    margin-left: -3em;
+    padding-right: pxem(10px);
+    position: relative;
+    text-align: right;
+    top: pxem(-25px);
+    width: 3em;
+  }
 }
 
 /// Hide only visually, but have it available for screen readers

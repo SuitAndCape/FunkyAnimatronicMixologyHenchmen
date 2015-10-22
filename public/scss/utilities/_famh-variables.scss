@@ -13,12 +13,13 @@ $core__html--font-size: 16px !default;
 /// Used with @pxem function
 $core__body--font-size: 20px !default;
 
+/// Color usage
+$truncated-bg-color: $gallery;
+$truncated-bg-rgba: $rgba-gallery;
+
 //== Animatronics Variables =============================================/
 
 /// Accordian-underline
-$acc-und__height: 2px;
-$acc-und__left: 0;
-$acc-und__right: 0;
-$acc-und__top: 100%;
+$acc-und__height: 1px;
 $acc-und__scalex--start: 0;
 $acc-und__scalex--end: 1;
