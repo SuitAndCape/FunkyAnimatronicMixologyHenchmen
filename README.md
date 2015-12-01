@@ -1,18 +1,16 @@
 <!-- README.md -->
 
-FunkyAnimatronicMoccasinHenchmen
+FunkyAnimatronicMixologyHenchmen
 ==========================================================================
 
-FunkyAnimatronicMoccasinHenchmen, or FAMH for boring, is a Sass (SCSS) library, providing functions, animations/transitions, mixins, and helpers.
-
-## Version 1.0.2
+FunkyAnimatronicMixologyHenchmen, or FAMH for boring, is a Sass (SCSS) library, providing functions, animations/transitions, mixins, and helpers.
 
 ## Contents
 
-- [Title](#funkyanimatronicmoccasinhenchmen)
+- [Title](#funkyanimatronicmixologyhenchmen)
 - [Requirements](#requirements)
-- [Download](#download)
-  + [Clone](#clone)
+- [Generating Stylesheets](#generating-stylesheets)
+  + [Sass Watch](#sass-watch)
 - [ToDos](#todos)
 - [User Stories, MVP, Specifications, and Pseudocode](#user-stories-mvp-specifications-and-pseudocode)
 - [Team Members](#team-members)
@@ -23,31 +21,31 @@ FunkyAnimatronicMoccasinHenchmen, or FAMH for boring, is a Sass (SCSS) library, 
 ## Requirements
 
 - [Ruby](https://www.ruby-lang.org/en/) 1.8.7+
-- [Sass](https://github.com/sass/sass) 3.4+
+- [Sass](https://github.com/sass/sass) 3.4.0+
 
-## Download
+## Generating Stylesheets
 
-### Clone
-Make a local clone of the FunkyAnimatronicMoccasinHenchmen repo.
+### Sass Watch
+Before making any modifications to the SCSS files, change to the root directory of your project, and run one of the following commands...
 
-- To clone with SSH, use the following command:
-
-``` sh
-git clone git@github.com:SuitAndCape/FunkyAnimatronicMoccasinHenchmen.git
-```
-
-- To clone with HTTPS, use the following command:
+- To compile minified CSS:
 
 ``` sh
-git clone https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen.git
+sass --watch source/scss/famh.scss:public/assets/stylesheets/famh.min.css --style compressed
 ```
 
-## ToDos
+- To compile standard CSS:
 
-- Make note of FunkyAnimatronicMoccasinHenchmen and RAPTORSMACSS overlap
+``` sh
+sass --watch source/scss/famh.scss:public/assets/stylesheets/famh.css
+```
+
+## Overlaps
+
+- Make note of FunkyAnimatronicMixologyHenchmen and RAPTORSMACSS overlap
 
 ``` scss
-// `_famh-config.scss` and `_config.scss` overlaps
+// `_famh-config.scss` and RAPTORSMACSS' `_config.scss` overlaps
 $clear
 $gallery
 $ebony
@@ -56,36 +54,39 @@ $rgba-ebony
 ```
 
 ``` scss
-// `_famh-variables.scss` and `_variables.scss` overlaps
+// `_famh-variables.scss` and RAPTORSMACSS' `_variables.scss` overlaps
 $core__html--font-size
 $core__body--font-size
 ```
 
 ``` scss
-// `_funky-nation.scss` and `_functions.scss` overlaps
+// `_funkulators.scss` and RAPTORSMACSS' `_functions.scss` overlaps
 @function pxrem(){}
 @function pxem(){}
 ```
 
 ``` scss
-// `_henchmen.scss` and `_helpers.scss` overlaps
+// `_henchmen.scss` and RAPTORSMACSS' `_helpers.scss` overlaps
 .center-align, %center-align
 .clearfix, %clearfix
 .no-bullets, %no-bullets
 ```
 
-- Add instructional `README.md` files to each directory found in `public/scss/`
-- Add more comments explaining what things do
+## ToDos
+
+- Decide whether to continue using `@mixin prefixer`, [Autoprefixer](https://github.com/postcss/autoprefixer), or [Gulp-Autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
+- Write thorough documentation or instructional `.md` file(s) explaining how to use everything
 - Develop more animations and functions
-- Write thorough documentation explaining how to use everything
 - Include logo, when developed
-- Include favicon, when developed
+- Include favicon, when developed (maybe)
+- Create separate Animatronics repo
+- Create [RAPTORSMACSS](https://github.com/SuitAndCape/RAPTORSMACSS) tie-in repo
 
 --------------------------------------------------------------------------
 
 ## User Stories, MVP, Specifications, and Pseudocode
 
-To see the process that has been documented for this project, [click here](https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen/blob/master/SMSP.md).
+To see the process that has been documented for this project, [click here](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/master/SMSP.md).
 
 ## Team Members:
 
@@ -93,13 +94,13 @@ To see the process that has been documented for this project, [click here](https
 
 ## Humans.txt
 
-[We Are People.  Get to Know Us.](https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen/blob/master/humans.txt)
+[We Are People.  Get to Know Us.](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/master/humans.txt)
 
 The humans.txt movement is all about getting to know the people behind a website or project.  To find out more, visit [humanstxt.org](http://humanstxt.org/).
 
 ## License
 
-This [project](#funkyanimatronicmoccasinhenchmen) is copyright © 2015 Ali Esmaili | SuitAndCape.  It is free software that may be redistributed under the terms specified in the [LICENSE](https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen/blob/master/LICENSE).
+This [project](#funkyanimatronicmixologyhenchmen) is copyright © 2015 Ali Esmaili | SuitAndCape.  It is free software that may be redistributed under the terms specified in the [LICENSE](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/master/LICENSE).
 
 This is based on [The MIT License (MIT)](http://opensource.org/licenses/MIT).  For more information, visit the [Open Source Initiative](http://opensource.org/) website.
 

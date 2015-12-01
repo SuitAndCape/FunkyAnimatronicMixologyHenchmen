@@ -1,0 +1,149 @@
+// _mixology.scss
+
+////= Mixology (Mixins)
+//======================================================================//
+
+//== Input Mixins =======================================================/
+
+/// Background image assignment and features
+/// @author Ali Esmaili
+/// @param {String} $image-path - Path to image
+/// @param {String} $name - Name of image
+/// @param {Length(s)} $length - Optional length width or width and height
+/// @requires _variables => Asset paths
+@mixin bg-img($image-path, $name, $length: false) {
+  background-image: url('#{$image-path}/#{$name}');
+
+  @if($length) {
+    background-size: $length;
+  }
+}
+
+//== Generator Mixins ===================================================/
+
+/// Vendor prefix prepender
+/// @param {String} $key - Property's name
+/// @param {Value} $value - Property's value
+@mixin prefixer($key, $value, $prefixes: moz ms o webkit) {
+  @if $prefixes {
+    @each $vendor in $prefixes {
+      #{'-' + $vendor + '-' + $key}: #{$value};
+    }
+  }
+  #{$key}: #{$value};
+}
+
+/// Multi-property vendor prefix prepender
+/// @param {String} $key - Property's name
+/// @param {Value} $value - Property's value
+@mixin prefix-map($map, $prefixes: moz ms o webkit) {
+  @each $key, $value in $map {
+    @if $prefixes {
+      @each $vendor in $prefixes {
+        #{'-' + $vendor + '-' + $key}: #{$value};
+      }
+    }
+    #{$key}: #{$value};
+  }
+}
+
+/// Animation generator
+/// @param {Values} $values - Animation values (inline)
+  /// $values options - name duration timing-function delay
+  //iteration-count direction fill-mode play-state
+/// @requires @prefixer
+@mixin animation($values) {
+  @include prefixer('animation', $values, moz o webkit);
+}
+
+/// Animation keyframes
+/// @param {String} $name - Animation name
+/// @content - Keyframes property values
+@mixin keyframes($name) {
+  @-moz-keyframes $name {
+    @content;
+  }
+
+  @-o-keyframes $name {
+    @content;
+  }
+
+  @-webkit-keyframes $name {
+    @content;
+  }
+
+  @keyframes $name {
+    @content;
+  }
+}
+
+/// Box-sizing generator
+/// @param {Value} $value - Box-sizing's value
+/// @requires @prefixer
+@mixin box-sizing($value) {
+  @include prefixer('box-sizing', $value, moz webkit);
+}
+
+/// Transformation generator
+/// @param {Value} $values - Transform's function(s)/value(s)
+/// @requires @prefixer
+@mixin transform($values) {
+  @include prefixer('transform', $values, moz o webkit);
+}
+
+@mixin translate($x: 0, $y: 0) {
+  @include transform(translate($x, $y));
+}
+
+@mixin translate3d($x: 0, $y: 0, $z: 0) {
+  @include transform(translate($x, $y, $z));
+}
+
+@mixin translateX($x: 0) {
+  @include transform(translateX($x));
+}
+
+@mixin translateY($y: 0) {
+  @include transform(translateY($y));
+}
+
+@mixin translateZ($z: 0) {
+  @include transform(translateZ($z));
+}
+
+@mixin scale($x: 0, $y: 0) {
+  @include transform(scale($x, $y));
+}
+
+@mixin scale3d($x: 0, $y: 0, $z: 0) {
+  @include transform(scale($x, $y, $z));
+}
+
+@mixin scaleX($x: 0) {
+  @include transform(scaleX($x));
+}
+
+@mixin scaleY($y: 0) {
+  @include transform(scaleY($y));
+}
+
+@mixin scaleZ($z: 0) {
+  @include transform(scaleZ($z));
+}
+
+    /// => ToDo: rotate, skew, and perspective transform mixins <= ///
+
+/// Transformation-Origin generator
+/// @param {Value} $values - Transform-origin's values
+/// @requires @prefixer
+@mixin transform-origin($values) {
+  @include prefixer('transform-origin', $values, moz o webkit);
+}
+
+/// Transition generator
+/// @param {Value(s)} $values - Transition's values (inline)
+  /// $values options - property duration timing-function delay
+/// @requires @prefixer
+@mixin transition($values) {
+  @include prefixer('transition', $values, moz o webkit);
+}

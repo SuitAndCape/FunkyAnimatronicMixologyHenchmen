@@ -1,12 +1,12 @@
 // _henchmen.scss
 
-////= Henchmen (Helpers)
+////= Henchmen (Helper Classes and Placeholders)
 //======================================================================//
 
 /// Place a border around an element
 .border,
 %border {
-  border: pxem(1px) solid $ebony;
+  border: pxem(1px) solid $border-color;
 }
 
 /// Center alignment
@@ -46,7 +46,7 @@
 /// Image flipped horizontally
 .horizon-flip,
 %horizon-flip {
-  @include prefixinator(transform, scaleX(-1));
+  @include prefixer(transform, scaleX(-1));
   -ms-filter: 'FlipH';
   filter: FlipH;
 }
@@ -107,8 +107,8 @@
   }
 
   &:after {
-    background: -webkit-linear-gradient(left, $truncated-bg-rgba, $truncated-bg-color 50%, $truncated-bg-color);
-    background: linear-gradient(to right, $truncated-bg-rgba, $truncated-bg-color 50%, $truncated-bg-color);
+    background: -webkit-linear-gradient(left, $trunc-bg-rgba, $trunc-bg-color 50%, $trunc-bg-color);
+    background: linear-gradient(to right, $trunc-bg-rgba, $trunc-bg-color 50%, $trunc-bg-color);
     content: '\02026';
     float: right;
     left: 100%;

@@ -1,0 +1,31 @@
+// _famh-variables.scss
+
+////= Global Variable Assignments
+//======================================================================//
+
+//== Henchmen Variables =================================================/
+
+/// Border
+$border-color: $ebony; // => ./%border {border}
+
+/// Truncate
+$trunc-bg-color: $gallery; // => ./%truncate {background}
+$trunc-bg-rgba: $rgba-gallery; // => ./%truncate {background}
+
+//== Animatronics Variables =============================================/
+
+/// Underline-accordian
+$under-acc-bg-color: currentcolor; // => &-accordion {&::before {background}}
+$under-acc-height: 1px; // => &-accordion {&::before {height}}
+$under-acc-scalex-start: 0; // => &-accordion {&::before {@include scaleX()}}
+$under-acc-scalex-end: 1; // => &-accordion {&:active::before,&:hover::before {@include scaleX()}}
+
+//== Foundation Variables ===============================================/
+
+/// HTML font-size
+/// Used with @pxrem function
+$core__html--font-size: 16px !default;
+
+/// Body font-size
+/// Used with @pxem function
+$core__body--font-size: 18px !default;

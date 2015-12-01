@@ -1,0 +1,34 @@
+// famh.scss
+
+/// FunkyAnimatronicMixologyHenchmen v1.1.0
+  /// SOURCE: https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen
+  /// Authored by Ali Esmaili
+  /// Copyright (c) 2015-2016 Ali Esmaili | SuitAndCape
+  /// MIT: https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/master/LICENSE
+
+////= FunkyAnimatronicMixologyHenchmen Master Manifest
+//======================================================================//
+
+@charset 'UTF-8';
+
+//== Project Tools ======================================================/
+
+/// Import global configuration
+@import 'utilities/famh-config';
+
+/// Import global variable assignments
+@import 'utilities/famh-variables';
+
+/// Import funkulators (functions)
+@import 'utilities/funkulators';
+
+/// Import mixology (mixins)
+@import 'utilities/mixology';
+
+//== Reusable Properties ================================================/
+
+/// Import henchmen (helper classes and placeholders)
+@import 'extends/henchmen';
+
+/// Import animatronics (animation/transition classes and placeholders)
+@import 'extends/animatronics';

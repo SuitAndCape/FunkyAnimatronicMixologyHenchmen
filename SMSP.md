@@ -5,29 +5,30 @@ Stories, MVP, Specs, and Pseudocode
 
 ## User Stories
 
-1. I want to use FunkyAnimatronicMoccasinHenchmen for any project I can use Sass (SCSS) in
-2. I want FunkyAnimatronicMoccasinHenchmen to provide useful Sass functions, animations/transitions, mixins, and helpers
-3. I want the files of FunkyAnimatronicMoccasinHenchmen to be tied together in a practical manner, but easily detachable
-4. I want FunkyAnimatronicMoccasinHenchmen to be modular
+1. Easy to add to any project I can use Sass (SCSS) in
+2. Provides useful Sass functions, animations/transitions, mixins, and helpers
+3. The files are tied together in a practical manner, but easily detachable
+4. Modular design
   - Separate files
   - Separate folders
 
 --------------------------------------------------------------------------
 
 ## Minimum Viable Product
-- Folders
-  + `extends/`
+
+- Sections/Folders
   + `utilities/`
+  + `extends/`
 - Files
-  + functions
-    * `_funky-nations.scss`
-  + animations/transitions
+  + Functions
+    * `_funkulators.scss`
+  + Animations/Transitions
     * `_animatronics.scss`
-  + mixins
-    * `_moccasins.scss`
-  + helpers
+  + Mixins
+    * `_mixology.scss`
+  + Helpers
     * `_henchmen.scss`
-  + config
+  + Config
     * `_famh-config.scss`
-  + variables
+  + Variables
     * `_famh-variables.scss`

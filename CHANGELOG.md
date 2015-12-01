@@ -1,6 +1,6 @@
 <!-- CHANGELOG.md -->
 
-FunkyAnimatronicMoccasinHenchmen Changelog
+FunkyAnimatronicMixologyHenchmen Changelog
 ==========================================================================
 
 ## 1.1.0
