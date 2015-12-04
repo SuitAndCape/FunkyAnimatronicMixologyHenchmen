@@ -49,14 +49,13 @@ sass --watch source/scss/famh.scss:public/assets/stylesheets/famh.css
 $clear
 $gallery
 $ebony
-$rgba-gallery
-$rgba-ebony
 ```
 
 ``` scss
 // `_famh-variables.scss` and RAPTORSMACSS' `_variables.scss` overlaps
-$core__html--font-size
-$core__body--font-size
+$html-font-size
+$body-font-size
+$body-bg-color
 ```
 
 ``` scss

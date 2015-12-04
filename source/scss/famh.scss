@@ -11,7 +11,7 @@
 
 @charset 'UTF-8';
 
-//== Project Tools ======================================================/
+//== Universal Tools ====================================================/
 
 /// Import global configuration
 @import 'utilities/famh-config';
@@ -25,7 +25,7 @@
 /// Import mixology (mixins)
 @import 'utilities/mixology';
 
-//== Reusable Properties ================================================/
+//== Pragmatic Properties ===============================================/
 
 /// Import henchmen (helper classes and placeholders)
 @import 'extends/henchmen';

@@ -50,12 +50,12 @@
     float: right;
     margin-left: -10px;
     width: 100%; }
-  .truncate:before {
+  .truncate::before {
     content: '';
     float: left;
     height: 100%;
     width: 0.55556em; }
-  .truncate:after {
+  .truncate::after {
     background: -webkit-linear-gradient(left, rgba(239, 239, 239, 0), #EFEFEF 50%, #EFEFEF);
     background: linear-gradient(to right, rgba(239, 239, 239, 0), #EFEFEF 50%, #EFEFEF);
     content: '\02026';
