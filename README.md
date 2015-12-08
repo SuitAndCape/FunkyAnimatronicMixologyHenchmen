@@ -11,6 +11,7 @@ FunkyAnimatronicMixologyHenchmen, or FAMH for boring, is a Sass (SCSS) library, 
 - [Requirements](#requirements)
 - [Generating Stylesheets](#generating-stylesheets)
   + [Sass Watch](#sass-watch)
+- [Overlaps](#overlaps)
 - [ToDos](#todos)
 - [User Stories, MVP, Specifications, and Pseudocode](#user-stories-mvp-specifications-and-pseudocode)
 - [Team Members](#team-members)

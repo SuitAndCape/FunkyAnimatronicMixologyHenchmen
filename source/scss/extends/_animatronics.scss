@@ -8,7 +8,6 @@
 .underline,
 %underline {
   &-accordion {
-
     &::before {
       @include scaleX($under-acc-scalex-start);
       background: $under-acc-bg-color;
