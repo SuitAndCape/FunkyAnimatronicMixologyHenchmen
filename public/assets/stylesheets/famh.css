@@ -77,7 +77,7 @@
   padding: 0;
   position: absolute;
   width: 0.05556em; }
-  .visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+  .visually-hidden-focusable:active, .visually-hidden-focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -85,6 +85,18 @@
     position: static;
     width: auto; }
 
+.presence, .presence-blink, .presence-pulse {
+  color: #714AB2; }
+  .presence-blink {
+    animation: blink 1s steps(1, end) infinite; }
+  .presence-pulse {
+    animation: pulse 1s infinite; }
+@keyframes blink {
+  50% {
+    opacity: 0; } }
+@keyframes pulse {
+  50% {
+    opacity: 0; } }
 .underline-accordion::before {
   -moz-transform: scaleX(0);
   -o-transform: scaleX(0);
@@ -97,7 +109,7 @@
   position: absolute;
   right: 0;
   top: 100%;
-  transition: inherit; }
+  transition: 0.3s; }
 .underline-accordion:active::before, .underline-accordion:hover::before {
   -moz-transform: scaleX(1);
   -o-transform: scaleX(1);

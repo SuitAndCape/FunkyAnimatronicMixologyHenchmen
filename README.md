@@ -11,11 +11,8 @@ FunkyAnimatronicMixologyHenchmen, or FAMH for boring, is a Sass (SCSS) library, 
 - [Requirements](#requirements)
 - [Generating Stylesheets](#generating-stylesheets)
   + [Sass Watch](#sass-watch)
-- [Overlaps](#overlaps)
 - [ToDos](#todos)
-- [User Stories, MVP, Specifications, and Pseudocode](#user-stories-mvp-specifications-and-pseudocode)
-- [Team Members](#team-members)
-- [Humans.txt](#humanstxt)
+- [Team](#team)
 - [License](#license)
 - [Connect](#connect)
 
@@ -32,44 +29,13 @@ Before making any modifications to the SCSS files, change to the root directory 
 - To compile minified CSS:
 
 ``` sh
-sass --watch source/scss/famh.scss:public/assets/stylesheets/famh.min.css --style compressed
+sass --watch source/scss/famh.scss:assets/stylesheets/famh.min.css --style compressed
 ```
 
 - To compile standard CSS:
 
 ``` sh
-sass --watch source/scss/famh.scss:public/assets/stylesheets/famh.css
-```
-
-## Overlaps
-
-- Make note of FunkyAnimatronicMixologyHenchmen and RAPTORSMACSS overlap
-
-``` scss
-// `_famh-config.scss` and RAPTORSMACSS' `_config.scss` overlaps
-$clear
-$gallery
-$ebony
-```
-
-``` scss
-// `_famh-variables.scss` and RAPTORSMACSS' `_variables.scss` overlaps
-$html-font-size
-$body-font-size
-$body-bg-color
-```
-
-``` scss
-// `_funkulators.scss` and RAPTORSMACSS' `_functions.scss` overlaps
-@function pxrem(){}
-@function pxem(){}
-```
-
-``` scss
-// `_henchmen.scss` and RAPTORSMACSS' `_helpers.scss` overlaps
-.center-align, %center-align
-.clearfix, %clearfix
-.no-bullets, %no-bullets
+sass --watch source/scss/famh.scss:assets/stylesheets/famh.css
 ```
 
 ## ToDos
@@ -77,26 +43,21 @@ $body-bg-color
 - Decide whether to continue using `@mixin prefixer`, [Autoprefixer](https://github.com/postcss/autoprefixer), or [Gulp-Autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
 - Write thorough documentation or instructional `.md` file(s) explaining how to use everything
 - Develop more animations and functions
+-
+- rename `public/source/scss/extends/` directory
 - Include logo, when developed
 - Include favicon, when developed (maybe)
 - Create separate Animatronics repo
 - Create [RAPTORSMACSS](https://github.com/SuitAndCape/RAPTORSMACSS) tie-in repo
+- Make note of [overlaps](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/SMSP/SMSP.md#overlaps) between FunkyAnimatronicMixologyHenchmen and RAPTORSMACSS
 
 --------------------------------------------------------------------------
 
-## User Stories, MVP, Specifications, and Pseudocode
+## Team
 
-To see the process that has been documented for this project, [click here](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/master/SMSP.md).
-
-## Team Members:
+[The humans responsible and technology colophon](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/master/humans.txt).
 
 - **Ali Esmaili** _(Developer)_: [AESM](https://github.com/AESM)
-
-## Humans.txt
-
-[We Are People.  Get to Know Us.](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/master/humans.txt)
-
-The humans.txt movement is all about getting to know the people behind a website or project.  To find out more, visit [humanstxt.org](http://humanstxt.org/).
 
 ## License
 

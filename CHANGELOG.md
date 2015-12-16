@@ -3,6 +3,11 @@
 FunkyAnimatronicMixologyHenchmen Changelog
 ==========================================================================
 
+## 1.1.1
+
+- Do away with `public/source/scss/utilities/_famh-variables.scss` file
+- Create SMSP branch
+
 ## 1.1.0
 
 - Initial public release

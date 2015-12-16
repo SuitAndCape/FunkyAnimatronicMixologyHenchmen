@@ -5,6 +5,33 @@
 
 //== Emphasizers ========================================================/
 
+.presence,
+%presence {
+  color: $presence-color;
+
+  &-blink {
+    @extend .presence;
+    animation: blink $secondary-trans steps(1, end) infinite;
+  }
+
+  &-pulse {
+    @extend .presence;
+    animation: pulse $secondary-trans infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulse {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
 .underline,
 %underline {
   &-accordion {
@@ -17,7 +44,7 @@
       position: absolute;
       right: 0;
       top: 100%;
-      transition: inherit;
+      transition: $primary-trans;
     }
 
     &:active::before,

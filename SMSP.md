@@ -30,5 +30,32 @@ Stories, MVP, Specs, and Pseudocode
     * `_henchmen.scss`
   + Config
     * `_famh-config.scss`
-  + Variables
-    * `_famh-variables.scss`
+
+--------------------------------------------------------------------------
+
+## Overlaps
+
+``` scss
+// `_famh-config.scss` and RAPTORSMACSS' `_config.scss` overlaps
+$clear
+$gallery
+$ebony
+$primary-trans
+$secondary-trans
+$html-font-size
+$body-font-size
+$body-bg-color
+```
+
+``` scss
+// `_funkulators.scss` and RAPTORSMACSS' `_functions.scss` overlaps
+@function pxrem(){}
+@function pxem(){}
+```
+
+``` scss
+// `_henchmen.scss` and RAPTORSMACSS' `_helpers.scss` overlaps
+.center-align, %center-align
+.clearfix, %clearfix
+.no-bullets, %no-bullets
+```
