@@ -43,7 +43,6 @@ sass --watch source/scss/famh.scss:assets/stylesheets/famh.css
 - Decide whether to continue using `@mixin prefixer`, [Autoprefixer](https://github.com/postcss/autoprefixer), or [Gulp-Autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
 - Write thorough documentation or instructional `.md` file(s) explaining how to use everything
 - Develop more animations and functions
--
 - rename `public/source/scss/extends/` directory
 - Include logo, when developed
 - Include favicon, when developed (maybe)
