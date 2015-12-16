@@ -56,7 +56,7 @@ sass --watch source/scss/famh.scss:assets/stylesheets/famh.css
 
 [The humans responsible and technology colophon](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen/blob/master/humans.txt).
 
-- **Ali Esmaili** _(Developer)_: [AESM](https://github.com/AESM)
+- **Ali Esmaili** _(Developer & Designer)_: [AESM](https://github.com/AESM)
 
 ## License
 
